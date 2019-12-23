@@ -148,7 +148,7 @@
             TempItem.Name = ""
             TempItem.DropType = ItemType.GlitchTeleport
             TempItem.GivenPowers = New List(Of Powers)
-            TempItem.GivenPowers.AddRange({Powers.LabCoat})
+TempItem.GivenPowers.AddRange({Powers.LabCoat,Powers.Kilver})
             TempItem.Weight = 3 'weight 3 for coats & drones to maximize variance
             TempItem.GID = 61
             Items.Add(TempItem)
@@ -167,7 +167,7 @@
             TempItem.Name = ""
             TempItem.DropType = ItemType.DroneGun
             TempItem.GivenPowers = New List(Of Powers)
-            TempItem.GivenPowers.AddRange({Powers.Drone})
+TempItem.GivenPowers.AddRange({Powers.Drone,Powers.Drill,Powers.Nova,Powers.Kilver})
             TempItem.Weight = 3 'weight 3 for coats & drones to maximize variance
             TempItem.GID = 63
             Items.Add(TempItem)
@@ -186,7 +186,7 @@
             TempItem.DropType = ItemType.RedCoat
             TempItem.JumpAdded = 4
             TempItem.GivenPowers = New List(Of Powers)
-            TempItem.GivenPowers.AddRange({Powers.RedCoat})
+TempItem.GivenPowers.AddRange({Powers.RedCoat,Powers.Drill,Powers.Kilver,Powers.Nova})
             TempItem.Weight = 4 'weight 4 for red coat so it can be in almost every location
             TempItem.GID = 68
             Items.Add(TempItem)
@@ -223,7 +223,7 @@
             TempItem.DropType = ItemType.BlackCoat
             TempItem.GivenPowers = New List(Of Powers)
             TempItem.JumpAdded = 3 'Red Coat placed first however we want to place redcoat in places reachable by trench so this still has a relevant jump height.
-            TempItem.GivenPowers.AddRange({Powers.TrenchCoat})
+TempItem.GivenPowers.AddRange({Powers.TrenchCoat,Powers.Nova,Powers.Kilver})
             TempItem.Weight = 3 'weight 3 for coats & drones to maximize variance
             TempItem.GID = 72
             Items.Add(TempItem)
