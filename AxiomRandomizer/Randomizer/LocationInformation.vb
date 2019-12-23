@@ -1934,7 +1934,7 @@ Namespace GameInformation
             TempLocation.XLocation = 8384
             TempLocation.YLocation = 5072
             TempLocation.RequiredPowers = New List(Of Powers)
-            TempLocation.RequiredPowers.AddRange({Powers.Damage, Powers.Nova})
+            TempLocation.RequiredPowers.AddRange({Powers.Damage})
             If Not OpenEribu1 Then TempLocation.RequiredPowers.AddRange({Powers.Drill})
             TempLocation.AddedPowers = New List(Of Powers)
             TempLocation.MapOptionPowers = New List(Of Powers)
@@ -1979,7 +1979,7 @@ Namespace GameInformation
             TempLocation.RequiredPowers = New List(Of Powers)
             TempLocation.RequiredPowers.AddRange({Powers.Damage})
             If Not OpenEribu1 Then TempLocation.RequiredPowers.AddRange({Powers.Drill})
-            TempLocation.RequiredJump = 6
+or(TempLocation.RequiredJump = 6, Powers.Glitch1) 
             TempLocation.AddedPowers = New List(Of Powers)
             TempLocation.MapOptionPowers = New List(Of Powers)
             Locations.Add(TempLocation)
@@ -2009,7 +2009,7 @@ Namespace GameInformation
             TempLocation.XLocation = 2272
             TempLocation.YLocation = 3136
             TempLocation.RequiredPowers = New List(Of Powers)
-            TempLocation.RequiredPowers.AddRange({Powers.Damage, Powers.Drill, Powers.Drone, Powers.Glitch2})
+            TempLocation.RequiredPowers.AddRange({Powers.Damage, Powers.Drill, Powers.Drone, or(Powers.Glitch2,Powers.RedCoat)})
             TempLocation.RequiredJump = 6
             TempLocation.AddedPowers = New List(Of Powers)
             TempLocation.MapOptionPowers = New List(Of Powers)
@@ -2117,7 +2117,8 @@ Namespace GameInformation
             TempLocation.XLocation = 4064
             TempLocation.YLocation = 2304
             TempLocation.RequiredPowers = New List(Of Powers)
-            TempLocation.RequiredPowers.AddRange({Powers.Damage, Powers.Drill})
+TempLocation.RequiredPowers.AddRange({Powers.Damage, or(Powers.Drill,Powers.Kilver)})
+If Not OpenEribu1 Then TempLocation.RequiredPowers.AddRange({Powers.Drill})
             TempLocation.AddedPowers = New List(Of Powers)
             TempLocation.MapOptionPowers = New List(Of Powers)
             Locations.Add(TempLocation)
